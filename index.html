@@ -32,7 +32,49 @@
 </div>
 
 
+<div >
+<h1 class="light animate-bottom" style="margin-top:3em; margin-left:1em;"><span id="welcome"></span></h1>
+</div>
+<script >
 
+function animateFunction() {
+  document.getElementById("welcome").style.display = "block";
+}
+
+
+document.getElementById('welcome').innerHTML = "Hi there...";
+
+ setTimeout("changeText();",3000);
+ 
+
+
+function Fadeout() {
+   var opacity = 1;
+   if (opacity>=0) {
+      opacity -= .1;
+      setTimeout(function(){Fadeout()},100);
+   }
+   document.getElementById('welcome').style.opacity = opacity;
+}
+
+
+function fadein() {
+var opacity = 0;
+   if (opacity<1) {
+      opacity += .1;
+      setTimeout(function(){MyFadeFunction()},100);
+   }
+   document.getElementById('welcome').style.opacity = opacity;
+}
+ 
+ 
+function changeText(){
+
+document.getElementById('welcome').innerHTML = "Meet Pradheep!"
+
+}
+
+</script>
 </body>
 
 
