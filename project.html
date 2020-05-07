@@ -27,11 +27,12 @@
 		<div class="w3-container w3-padding-16">
           <h5 class="w3-opacity"><b>Home-Automation System	</b></h5>		  
           <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Present</h6>
-          <p>•   Utilized Jenkins and BitBucket repository for Continuous Integration and Continuous Deployment <br>
-•  Wrote unit test cases in Python and JUnit Tests in Java for each public method in every class<br>
-•  Processed data in Ubidots Cloud Platform and communicated with Gateway making use of MQTT protocol and Ubidots API<br>
-•  Parsed actuation JSON data in constrained device received from Gateway using CoAP protocol <br>
-•  Read raw data from sensors attached to RaspberryPi via I2C bus and processed them to obtain the actual value		
+          <p>•  Read raw data from sensors attached to RaspberryPi via I2C bus and published them to the gateway device<br>
+•  Utilized Jenkins and BitBucket repository for Continuous Integration and Continuous Deployment, running unittests<br>
+•  Communicated with AWS IoT Core from gateway device making use of secure MQTT protocol with certificates<br>
+•  Processed the JSON sensor data in an AWS Lambda Function and transmitted the result back to the gateway<br>
+•  Stored and visualized the data trends using AWS Elasticsearch, Kibana while monitoring resource usage in CloudWatch
+	
 			</p>
           <hr>
         </div>
